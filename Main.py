@@ -4,6 +4,7 @@ import Funciones
 archivocsv = open('C:/Users/figue/Desktop/salaries.csv')
 salarios = csv.reader(archivocsv, delimiter=';')
 
+
 trabajo = []
 salario = []
 
@@ -18,10 +19,15 @@ salarioordenado = Funciones.merge_sort_num(salario)
 
 trabajoordenado = Funciones.merge_sort_strings(trabajo)
 
-#for i in trabajoordenado:
-    #print(i)
 
-for i in salarioordenado:
-    print(i)
+print("-"*275)
+print("=== Menú de opciones ===")
+print("1. Ordenar por residencia")
+print("2. Ordenar por salario")
+print("3. Ordenar por trabajo")
+print("4. Salir\n")
+print("Seleccione el número de la opción que desea ejecutar")
+
+respuesta = int(input())
 
 
